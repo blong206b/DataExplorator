@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "DataConfigurator2"
+title                    : "DataConfigurator"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Brett Long"
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Brett Long"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "I am a **beginning** Data Analyst."
+  location         : "Virginia Beach, VA"
   email            :
   links:
     - label: "Email"
