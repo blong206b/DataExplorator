@@ -27,8 +27,6 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# Weblinks to the second page
-<a href="secondpage.html">Go to Second Page</a>
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -121,9 +119,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
+    - label: "Page 2"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: https://blong206b.github.io/DataExplorator/secondpage.html
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
