@@ -134,9 +134,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
+    - label: "Faceook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: https://www.facebook.com/blong206b
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: https://www.linkedin.com/in/blong206b/
