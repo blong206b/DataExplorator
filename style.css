@@ -1,4 +1,8 @@
 h1 {
     color: red;
   }
+  .blue-italic {
+    color: blue;
+    font-style: italic;
+  }
   
