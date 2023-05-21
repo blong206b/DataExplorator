@@ -1,8 +1,9 @@
 h1 {
     color: red;
   }
-  .blue-italic {
+  h2.blue-italic {
     color: blue;
     font-style: italic;
   }
+  
   
