@@ -7,24 +7,27 @@
 </head>
 
 <body>
-    {% include header.html %}
-    <h1>Welcome to My Website</h1>
-    <p>This is the start page of my GitHub Pages website.</p>
-    <div class="button-container">
-        <button onclick="myFunction()">Click me</button>
-    </div>
-    <select onchange="window.location.href=this.value">
+    <header>
+        <img src="unsplash-image-2.jpg" alt="Header Picture">
+    </header>
+</body>
+<h1>Welcome to My Website</h1>
+<p>This is the start page of my GitHub Pages website.</p>
+<div class="button-container">
+    <button onclick="myFunction()">Click me</button>
+</div>
+<select onchange="window.location.href=this.value">
   <option value="">Select a page</option>
   <option value="secondpage.html">Second Page</option>
   <option value="thirdpage.html">Third Page</option>
 </select>
-    <br><br>
-    <a href="https://blong206b.github.io/DataExplorator/secondpage.html">Go to Second Page</a>
-    <script>
-        function myFunction() {
-            alert('Button clicked!');
-        }
-    </script>
+<br><br>
+<a href="https://blong206b.github.io/DataExplorator/secondpage.html">Go to Second Page</a>
+<script>
+    function myFunction() {
+        alert('Button clicked!');
+    }
+</script>
 </body>
 
 </html>
