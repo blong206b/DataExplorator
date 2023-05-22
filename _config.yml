@@ -291,8 +291,6 @@ defaults:
       share: true
       related: true
 # Header
-
-```yaml
 header:
   image: /assets/images/unsplash-image-2.jpg
-```
+
