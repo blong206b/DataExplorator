@@ -12,12 +12,3 @@ h2 {
     font-size: 24px; /* you can adjust the value as needed */
 }
   
- .footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.footer img {
-    margin-left: 20px; /* Optional: Add some space between the link and the image */
-} 
