@@ -12,3 +12,16 @@ h2 {
     font-size: 24px; /* you can adjust the value as needed */
 }
   
+.image-container {
+    display: flex;
+    align-items: center; /* Optional: Aligns the items vertically in the center */
+}
+
+.half-size {
+    width: 50%;
+    margin-right: 20px; /* Optional: Adds some space between the image and the text */
+}
+
+.description {
+    max-width: 50%; /* Optional: You can set a max-width for the text so it doesn't expand too much */
+}
