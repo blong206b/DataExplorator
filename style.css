@@ -14,7 +14,7 @@ h2 {
   
 .image-container {
     display: flex;
-    align-items: center; /* Optional: Aligns the items vertically in the center */
+    align-items: left; /* Optional: Aligns the items vertically in the center */
 }
 
 .half-size {
