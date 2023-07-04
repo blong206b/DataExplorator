@@ -15,14 +15,22 @@
         <h2>Data Exploration</h2>
         <p>Before diving into the analysis, I first explored the dataset to understand the various features and gather basic statistics.</p>
         <pre>
-            # Load the Palmer Penguins dataset
-            library(palmerpenguins)
-            
-            # View the structure of the dataset
-            str(penguins)
-            
-            # Calculate basic statistics
-            summary(penguins)
+       # Load the Palmer Penguins dataset
+library(palmerpenguins)
+
+# Load the screenshots of the step-by-step process
+img_step_by_step <- "https://github.com/blong206b/DataExplorator/blob/main/Palmer%20Penguins%20Step%20by%20Step%20in%20RStudio.jpg?raw=true"
+img_rstudio_screenshots <- "https://github.com/blong206b/DataExplorator/blob/main/RStudio_Palmer_Penguins_Screenshots.jpg?raw=true"
+
+# Display the screenshots
+knitr::include_graphics(c(img_step_by_step, img_rstudio_screenshots))
+
+# View the structure of the dataset
+str(penguins)
+
+# Calculate basic statistics
+summary(penguins)
+
         </pre>
         <p>During data exploration, I found that the Palmer Penguins dataset contains [number of rows] observations and [number of columns] variables. The dataset includes information about [description of the variables].</p>
     </section>
