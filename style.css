@@ -1,13 +1,48 @@
 h1 {
-    color: green;
-  }
+    color: black;
+}
+
 h2 {
     color: blue;
     font-style: italic;
-  }
+}
+
 .button-container {
     margin-bottom: 20px;
-  }
-  
-  
-  
+}
+
+p {
+    font-size: 16px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.half-size {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.description {
+    max-width: 70%;
+    margin-top: 10px;
+}
+
+.large-link {
+    font-size: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.profile-picture {
+    width: 10%; /* Updated to make the image approximately 50% smaller */
+    margin-right: 20px;
+}
+
+.button-container a:first-child {
+    margin-right: 1em;
+}

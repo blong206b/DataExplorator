@@ -2,24 +2,99 @@
 <html>
 
 <head>
-    <title>RStudio demo</title>
+    <title>RStudio Portfolio: Palmer Penguins Analysis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Welcome to my RStudio page</h1>
-    <h2>This is the subheading</h2>
-    <p>Under construction, 2 graphs for now and a Proof of Concept video that will be replaced with a micro RStudio lesson</p>
-    <img src="images/green_penguins_50pct.jpg" alt="Green Penguins">
-    <img src="images/Calorie_distro_59pct.jpg" alt="Calorie_distro">
-    <br><br>
-    <!-- Add two line breaks -->
-    <a href="https://www.youtube.com/watch?v=DPXS93Pqx68"><img src="https://img.youtube.com/vi/DPXS93Pqx68/0.jpg" alt="Video Title"></a>
-    <br><br>
+    <h1>Welcome to My RStudio Portfolio</h1>
+    <h2>Scroll down to view the Palmer Penguins Project</h2>
+    <p>Click the <a href="RStudio_Titanic.html">Titanic Project</a> link to move on.</p>
 
-    <a href="https://blong206b.github.io/DataExplorator/index.html">Return to the Main Page</a>
-    <br>
+    <section class="data-exploration">
+        <h2>Data Exploration</h2>
+        <p>Before diving into the analysis, I first explored the dataset to understand the various features and gather basic statistics.</p>
+        
+        <img src="https://raw.githubusercontent.com/blong206b/DataExplorator/main/Palmer%20Penguins%20Step%20by%20Step%20in%20RStudio.jpg" alt="Palmer Penguins Step by Step in RStudio" style="width: 60%; height: auto;">
+        <img src="https://raw.githubusercontent.com/blong206b/DataExplorator/main/RStudio_Palmer_Penguins_Screenshots.jpg" alt="RStudio Palmer Penguins Screenshots" style="width: 60%; height: auto;">
+        
+        <p>During data exploration, I found that the Palmer Penguins dataset contains the following variables:</p>
+        
+        <table>
+            <tr>
+                <th>species</th>
+                <th>island</th>
+                <th>bill_length_mm</th>
+                <th>bill_depth_mm</th>
+                <th>flipper_length_mm</th>
+                <th>body_mass_g</th>
+                <th>sex</th>
+                <th>year</th>
+            </tr>
+            <tr>
+                <td>Adelie</td>
+                <td>Torgersen</td>
+                <td>39.1</td>
+                <td>18.7</td>
+                <td>181</td>
+                <td>3750</td>
+                <td>male</td>
+                <td>2007</td>
+            </tr>
+            <!-- Add more rows from the penguins dataset as needed -->
+        </table>
+        
+        <p>The dataset contains a total of 344 observations and 8 variables.</p>
+        
+        <img src="https://github.com/blong206b/DataExplorator/blob/main/Penguins_Dataset_Overview_in_RStudio.jpg?raw=true" alt="Penguins Dataset Overview in RStudio" style="width: 60%; height: auto;">
+    </section>
+
+    <section class="data-visualization">
+        <h2>Data Visualization</h2>
+        <p>Visualizing data helps in better understanding and gaining insights. Here are two visualizations I created:</p>
+        <img src="https://github.com/blong206b/DataExplorator/blob/main/Flipper_Length_vs_Body_Mass.jpg?raw=true" alt="Flipper Length vs. Body Mass" style="width: 60%; height: auto;">
+        <img src="https://github.com/blong206b/DataExplorator/blob/main/Count_of_Penguins_by_Species.jpg?raw=true" alt="Count of Penguins by Species" style="width: 60%; height: auto;">
+    </section>
+
+<section class="statistical-analysis">
+    <h2>Statistical Analysis</h2>
+    <p>I used R to perform statistical analysis on the Palmer Penguins dataset.</p>
+
+    <h3>1. Calculate summary statistics for numerical variables:</h3>
+    <img src="https://github.com/blong206b/DataExplorator/blob/main/Summary_Penguin_Statistics.jpg?raw=true" alt="Summary Penguin Statistics" style="width: 60%; height: auto;">
+
+    <h3>2. Perform t-test comparing body mass between Adelie and Chinstrap penguins:</h3>
+    <img src="https://github.com/blong206b/DataExplorator/blob/main/T_Test_Body_Mass_Adelie_Chinstrap.jpg?raw=true" alt="T-Test Body Mass Adelie Chinstrap" style="width: 60%; height: auto;">
+    <p>The Welch Two Sample t-test comparing body mass between Adelie and Chinstrap penguins resulted in a t-value of -0.54309, with a p-value of 0.5879. The test did not find a significant difference in the means of body mass between the two groups. The 95% confidence interval for the difference in means is -150.38481 to 85.53284.</p>
+
+    <h3>3. Box Plots of Body Mass by Species:</h3>
+    <img src="https://github.com/blong206b/DataExplorator/blob/main/Box_Plot_of_Body_Mass_by_Species.jpg?raw=true" alt="Box Plot of Body Mass by Species" style="width: 60%; height: auto;">
+    <p>The box plots illustrate the distribution of body mass among different species of penguins. The Adelie and Chinstrap penguins have similar body mass, while the Gentoo penguins have a significantly larger body mass compared to both Adelie and Chinstrap.</p>
+</section>
+
+
+ <section class="conclusion">
+    <h2>Conclusion and Insights</h2>
+    <p>Based on the summary statistics for selected numerical variables:</p>
+    
+    <ul>
+        <li>The bill length of the penguins ranges from 32.10mm to 59.60mm, with a median of 44.45mm and a mean of 43.92mm.</li>
+        <li>The flipper length of the penguins ranges from 172.0mm to 231.0mm, with a median of 197.0mm and a mean of 200.9mm.</li>
+        <li>The body mass of the penguins ranges from 2700g to 6300g, with a median of 4050g and a mean of 4202g.</li>
+    </ul>
+    
+    <p>These summary statistics provide insights into the distribution and central tendency of the measured variables in the Palmer Penguins dataset.</p>
+</section>
+
+    <section class="video">
+        <h2>Video Demonstration</h2>
+        <p>Watch this video for a proof of concept demonstration that will be replaced with a micro RStudio lesson.</p>
+        <a href="https://www.youtube.com/watch?v=DPXS93Pqx68"><img src="https://img.youtube.com/vi/DPXS93Pqx68/0.jpg" alt="Video Title"></a>
+    </section>
+
+    <a href="https://blong206b.github.io/DataExplorator/index.html" class="large-link">Return to the Main Page</a>
 
 </body>
 
 </html>
+
