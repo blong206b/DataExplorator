@@ -51,3 +51,8 @@ p {
 .tile1 {
     border: 1px solid black;
 }
+
+.tile1 img {
+    width: 100%;
+    height: auto;
+}
