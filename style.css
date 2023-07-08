@@ -39,10 +39,15 @@ p {
 }
 
 .profile-picture {
-    width: 10%; /* Updated to make the image approximately 50% smaller */
+    width: 10%;
+    /* Updated to make the image approximately 50% smaller */
     margin-right: 20px;
 }
 
 .button-container a:first-child {
     margin-right: 1em;
+}
+
+.tile1 {
+    border: 1px solid black;
 }
