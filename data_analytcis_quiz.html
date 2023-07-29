@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Analytics Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Data Analytics Quiz</h1>
+    </header>
+
+    <div class="quiz-container">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>Question 1: What is the difference between data analysis and data science?</p>
+            <input type="radio" name="q1" value="A"> A. Data analysis is a subset of data science.<br>
+            <input type="radio" name="q1" value="B"> B. Data science is a subset of data analysis.<br>
+            <input type="radio" name="q1" value="C"> C. They are two different fields with different goals.<br>
+            <input type="radio" name="q1" value="D"> D. They are the same thing.<br>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>Question 2: What are the four main types of data?</p>
+            <input type="radio" name="q2" value="A"> A. Numerical, categorical, ordinal, and nominal.<br>
+            <input type="radio" name="q2" value="B"> B. Continuous, discrete, ordinal, and nominal.<br>
+            <input type="radio" name="q2" value="C"> C. Nominal, ordinal, interval, and ratio.<br>
+            <input type="radio" name="q2" value="D"> D. Interval, ratio, ordinal, and nominal.<br>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>Question 3: What are the three main phases of the data analysis process?</p>
+            <input type="radio" name="q3" value="A"> A. Data collection, data cleaning, and data analysis.<br>
+            <input type="radio" name="q3" value="B"> B. Data cleaning, data analysis, and data visualization.<br>
+            <input type="radio" name="q3" value="C"> C. Data collection, data analysis, and data interpretation.<br>
+            <input type="radio" name="q3" value="D"> D. Data collection, data cleaning, data analysis, and data interpretation.<br>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>Question 4: What are the three main types of data analysis?</p>
+            <input type="radio" name="q4" value="A"> A. Descriptive, inferential, and predictive.<br>
+            <input type="radio" name="q4" value="B"> B. Descriptive, inferential, and exploratory.<br>
+            <input type="radio" name="q4" value="C"> C. Descriptive, predictive, and causal.<br>
+            <input type="radio" name="q4" value="D"> D. Descriptive, inferential, and causal.<br>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>Question 5: What are the three main types of data visualizations?</p>
+            <input type="radio" name="q5" value="A"> A. Bar charts, line charts, and pie charts.<br>
+            <input type="radio" name="q5" value="B"> B. Bar charts, line charts, and scatter plots.<br>
+            <input type="radio" name="q5" value="C"> C. Bar charts, line charts, and histograms.<br>
+            <input type="radio" name="q5" value="D"> D. Bar charts, line charts, and pie charts.<br>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>Question 6: What are the three main ethical considerations in data analytics?</p>
+            <input type="radio" name="q6" value="A"> A. Privacy, bias, and accountability.<br>
+            <input type="radio" name="q6" value="B"> B. Bias, accountability, and transparency.<br>
+            <input type="radio" name="q6" value="C"> C. Transparency, accountability, and responsibility.<br>
+            <input type="radio" name="q6" value="D"> D. Responsibility, accountability, and privacy.<br>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-button">
+            <input type="button" value="Submit Quiz" onclick="showResults()">
+        </div>
+
+        <!-- Quiz Results -->
+        <div class="quiz-results" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script>
+        function showResults() {
+            // Get the user's selected answers
+            const answers = document.querySelectorAll("input[type='radio']:checked");
+            let score = 0;
+
+            // Check each answer and calculate the score
+            for (let i = 0; i < answers.length; i++) {
+                const answer = answers[i].value;
+                if (answer === "A" || answer === "B" || answer === "C" || answer === "D") {
+                    score++;
+                }
+            }
+
+            // Display the quiz results
+            const results = document.querySelector(".quiz-results");
+            results.style.display = "block";
+            document.getElementById("score").innerText = `You scored ${score} out of 6!`;
+        }
+    </script>
+
+</body>
+
+</html>
