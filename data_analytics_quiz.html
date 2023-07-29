@@ -68,7 +68,7 @@
 
         <!-- Submit Button -->
         <div class="submit-button">
-            <input type="button" value="Submit Quiz" onclick="showResults()">
+            <button type="button" onclick="calculateScore()">Submit Quiz</button>
         </div>
 
         <!-- Quiz Results -->
@@ -87,18 +87,23 @@
             // Correct answers for each question
             const correctAnswers = ["A", "A", "C", "A", "B", "A"];
 
-            // Check each answer and calculate the score
-            for (let i = 0; i < answers.length; i++) {
-                const answer = answers[i].value;
-                if (answer === correctAnswers[i]) {
-                    score++;
+            // Check if all questions are answered
+            if (answers.length === 6) {
+                // Check each answer and calculate the score
+                for (let i = 0; i < answers.length; i++) {
+                    const answer = answers[i].value;
+                    if (answer === correctAnswers[i]) {
+                        score++;
+                    }
                 }
-            }
 
-            // Display the quiz results
-            const results = document.querySelector(".quiz-results");
-            results.style.display = "block";
-            document.getElementById("score").innerText = `You scored ${score} out of 6!`;
+                // Display the quiz results
+                const results = document.querySelector(".quiz-results");
+                results.style.display = "block";
+                document.getElementById("score").innerText = `You scored ${score} out of 6!`;
+            } else {
+                alert("Please answer all questions before submitting.");
+            }
         }
     </script>
 
