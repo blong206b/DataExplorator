@@ -79,15 +79,18 @@
     </div>
 
     <script>
-        function showResults() {
+        function calculateScore() {
             // Get the user's selected answers
             const answers = document.querySelectorAll("input[type='radio']:checked");
             let score = 0;
 
+            // Correct answers for each question
+            const correctAnswers = ["A", "A", "C", "A", "B", "A"];
+
             // Check each answer and calculate the score
             for (let i = 0; i < answers.length; i++) {
                 const answer = answers[i].value;
-                if (answer === "A" || answer === "B" || answer === "C" || answer === "D") {
+                if (answer === correctAnswers[i]) {
                     score++;
                 }
             }
